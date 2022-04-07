@@ -1,0 +1,56 @@
+salarioMin = float(input("Digite o valor do salario minimo hoje: \n"))
+nome = input("Digite seu nome: \n")
+salario = float(input("Digite o valor do seu salario: \n"))
+
+for i in range(5):
+    if salario < salarioMin*3:
+        reajuste = 50/100
+        total = reajuste+(salario*reajuste)
+        folha = folha + salario
+        salarioNovo = salario+(salario*reajuste)
+        novaFolha = novaFolha + novoSalario
+        
+        print(f"NOME: {nome}\n")
+        print(f"REAJUSTE DE 50%: {salario*reajuste}\n")
+        print(f"NOVO SALARIO COM AJUSTE: {novoSalario}\n")
+        input("PRESSIONE ENTER PARA CONTINUAR\n")
+    elif salario <= salarioMin*10:
+        reajuste = 20/100
+        total = reajuste+(salario*reajuste)
+        folha = folha + salario
+        salarioNovo = salario+(salario*reajuste)
+        novaFolha = novaFolha + novoSalario
+        
+        print(f"NOME: {nome}\n")
+        print(f"REAJUSTE DE 20%: {salario*reajuste}\n")
+        print(f"NOVO SALARIO COM AJUSTE: {novoSalario}\n")
+        input("PRESSIONE ENTER PARA CONTINUAR\n")
+        
+    elif salario <= salarioMin*20:
+        reajuste = 20/100
+        total = reajuste+(salario*reajuste)
+        folha = folha + salario
+        salarioNovo = salario+(salario*reajuste)
+        novaFolha = novaFolha + novoSalario
+        
+        print(f"NOME: {nome}\n")
+        print(f"REAJUSTE DE 15%: {salario*reajuste}\n")
+        print(f"NOVO SALARIO COM AJUSTE: {novoSalario}\n")
+        input("PRESSIONE ENTER PARA CONTINUAR\n")
+        
+    else:
+        reajuste = 20/100
+        total = reajuste+(salario*reajuste)
+        folha = folha + salario
+        salarioNovo = salario+(salario*reajuste)
+        novaFolha = novaFolha + novoSalario
+        
+        print(f"NOME: {nome}\n")
+        print(f"REAJUSTE DE 10%: {salario*reajuste}\n")
+        print(f"NOVO SALARIO COM AJUSTE: {novoSalario}\n")
+        input("PRESSIONE ENTER PARA CONTINUAR\n")
+        
+    print(f"Valor atual da folha: {folha} R$\n")
+    print(f"Valor da nova folha: {novaFolha} R$\n")
+    
+print("A empresa aumentou a folha de pagamentos em: ",novaFolha - folha)
