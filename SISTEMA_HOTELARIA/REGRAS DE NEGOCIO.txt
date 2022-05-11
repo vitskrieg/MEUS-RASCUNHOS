@@ -1,0 +1,40 @@
+REGRA DE NEGOCIO
+
+HOTEL
+
+>> OQ TEM NO HOTEL
+
+QUARTOS
+HOSPEDES
+SERVIÇOS
+
+>> O QUE O SISTEMA DEVE FAZER
+
+O sistema deve permitir que o usuario escolhe um quarto, em um andar
+
+O sistema deve permitir o usuario escolher a quantidade de pernoites
+
+O sistema deve permitir o usuario solicitar serviços como: cafe da manhã, almoço, lanche, jantar
+
+O sistema deve receber o valor dos pedidos e fechar uma conta com o total gasto pelo cliente
+
+O sistema deve avisar se o apartamento selecionado esta vago ou não
+
+
+>>N Funcionais
+
+O sistema deve solicitar dados como nome, cpf, data de nascimento
+
+Deve verificar se o cliente é maior de 18
+
+Um pernoite vale 12 horas, maximo de 12 pernoites por quarto
+
+Se um quarto estiver ocupado, o sistema deve procurar o quarto vago
+
+Se n houver quartos reservados, o sistema deve retornar "Não há vagas"
+
+O sistema deve somar na conta o valor do quarto alugado + despesa serviço
+
+
+derimarjannsen@gmail.com
+
