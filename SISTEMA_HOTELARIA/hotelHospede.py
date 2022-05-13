@@ -7,8 +7,8 @@ lista = []
 class cadastroHospede():
     def __init__(self):
         pass
-    def salvarCadastro(self,cpf):
-        dicionario[int(cpf)] = str(input("Digite nome: "))  
+    def salvarCadastro(self,cpf,nome):
+        dicionario[int(cpf)] = str(input(""))  
         lista.append(dicionario)   
         return print(lista)
         
