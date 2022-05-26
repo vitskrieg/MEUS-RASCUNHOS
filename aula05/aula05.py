@@ -1,0 +1,28 @@
+from traceback import print_tb
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.express as px
+
+base_credit = pd.read_csv(r'C:\Users\aluno08\Documents\CETAM\Aulas\Modulo_3\Vilson_VsCode2\aula05\veiculos2.csv', sep=';')
+#print(base_credit[:24].head)
+
+#Tirando todos os valores e substituindo por valores aceitaveis
+
+#Procurando os que possuem valores nulos
+print(base_credit.isnull().sum())
+
+print(base_credit.loc[pd.isnull(base_credit['year'])])
+base_credit['year'].fillna(base_credit['year'].mean(), inplace=True)
+base_credit['manufacturer'].fillna(base_credit['manufacturer'] == 'Não Informado', inplace=True)
+base_credit['model'].fillna(base_credit['model']=='Não Informado', inplace=True)
+base_credit['condition'].fillna(base_credit['condition']=='Não Informado', inplace=True)
+base_credit['cylinders'].fillna(base_credit['cylinders']=='Não Informado', inplace=True)
+base_credit['fuel'].fillna(base_credit['fuel']=='Não Informado', inplace=True)
+base_credit['odometer'].fillna(base_credit['odometer'].mean(), inplace=True)
+base_credit['title_status'].fillna(base_credit['title_status']=='Não Informado', inplace=True)
+
+#base_credit['year'].fillna(base_credit['year'].mean(), inplace=True)
+
+print(base_credit.isnull().sum())
